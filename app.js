@@ -13,8 +13,10 @@ var app = express();
 
 //add mongoose and connect to db 
 var mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost/INTERN",{ useNewUrlParser: true,useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://rishi123:apple@intern-eci1k.mongodb.net/INTERN?retryWrites=true&w=majority",{ useNewUrlParser: true,useUnifiedTopology: true })
 .then(res => console.log('Connected to db'));
+
+
 
 //add cors cross origin resource sharing
 var cors=require('cors');
